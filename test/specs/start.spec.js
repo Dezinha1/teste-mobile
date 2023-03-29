@@ -8,7 +8,8 @@ describe('primeiro teste', () => {
         await $('android=new UiSelector().text("This app is awesome")').click()
         await $('~Dropdown').click()
         await $('android=new UiSelector().text("Appium is awesome")').click()
-        await $('~button-Active').click() 
+        await $('~button-Active').click()
+        expect (await $('//android.widget.TextView').getText(actualText))
        
         
         
